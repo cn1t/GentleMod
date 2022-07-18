@@ -7,7 +7,7 @@ import net.minecraft.util.LazyValue;
 import java.util.function.Supplier;
 
 public enum ModItemTier implements IItemTier {
-    BRITAIN(3, 400, 4f, 10f, 10, () -> Ingredient.fromItems(ModItems.BRITAIN_SHARD.get()));
+    BRITAIN(3, 400, 3f, 6f, 10, () -> Ingredient.fromItems(ModItems.BRITAIN_SHARD.get()));
 
     private final int harvestLevel;
     private final int maxUses;

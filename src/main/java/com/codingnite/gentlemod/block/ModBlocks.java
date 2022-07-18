@@ -42,6 +42,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> TEATREE_PLANKS = registerBlock("teatree-planks",
             () -> new Block(AbstractBlock.Properties.from(Blocks.OAK_PLANKS)));
 
+    public static final RegistryObject<Block> TEATREE_LEAVES = registerBlock("teatree-leaves",
+            () -> new Block(AbstractBlock.Properties.from(Blocks.OAK_LEAVES)));
+
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
 
