@@ -1,13 +1,12 @@
 package com.codingnite.gentlemod.block;
 
 import com.codingnite.gentlemod.GentleMod;
+import com.codingnite.gentlemod.block.custom.Teatree;
 import com.codingnite.gentlemod.item.ModItemGroup;
 import com.codingnite.gentlemod.item.ModItems;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.RotatedPillarBlock;
+import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.trees.OakTree;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.ToolType;
@@ -43,7 +42,11 @@ public class ModBlocks {
             () -> new Block(AbstractBlock.Properties.from(Blocks.OAK_PLANKS)));
 
     public static final RegistryObject<Block> TEATREE_LEAVES = registerBlock("teatree-leaves",
-            () -> new Block(AbstractBlock.Properties.from(Blocks.OAK_LEAVES)));
+            () -> new LeavesBlock(AbstractBlock.Properties.create(Material.LEAVES).hardnessAndResistance(2f)
+                    .tickRandomly().sound(SoundType.PLANT).notSolid()));
+
+    public static final RegistryObject<Block> TEATREE_SAPLING = registerBlock("teatree-sapling",
+            () -> new SaplingBlock(new Teatree(), AbstractBlock.Properties.from(Blocks.OAK_SAPLING)));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
