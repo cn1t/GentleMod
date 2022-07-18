@@ -6,7 +6,7 @@
       "y": 90
     },
     "axis=y": {
-      "model:": "gentlemod:block/teatree-wood"
+      "model": "gentlemod:block/teatree-wood"
     },
     "axis=z": {
       "model": "gentlemod:block/teatree-wood",

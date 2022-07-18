@@ -6,7 +6,7 @@
       "y": 90
     },
     "axis=y": {
-      "model:": "gentlemod:block/teatree-log"
+      "model": "gentlemod:block/teatree-log"
     },
     "axis=z": {
       "model": "gentlemod:block/teatree-log-horizontal",
