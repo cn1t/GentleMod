@@ -1,0 +1,18 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "gentlemod:item/britain-flag"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [ 60, -90, 25 ],
+      "translation": [ 0, 8, 0 ],
+      "scale": [ 1.4, 1.4, 1.4 ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [ 0, -135, 25 ],
+      "translation": [ 0, 8, 4 ],
+      "scale": [ 1.7, 1.7, 1.7 ]
+    }
+  }
+}

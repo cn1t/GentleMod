@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "gentlemod:britain-ore"
+  },
+  "result": "gentlemod:britain-shard",
+  "experience": 1.0,
+  "cookingtime": 200
+}

@@ -1,0 +1,23 @@
+{
+  "block.gentlemod.britain-ore": "Britain Ore",
+  "item.gentlemod.britain-shard": "Britain Shard",
+  "block.gentlemod.britain-block": "Britain Block",
+
+  "item.gentlemod.tea-leaf": "Tea Leaf",
+
+  "block.gentlemod.teatree-log": "Teatree Log",
+  "block.gentlemod.stripped-teatree-log": "Stripped Teatree Log",
+  "block.gentlemod.teatree-wood": "Teatree Wood",
+  "block.gentlemod.stripped-teatree-wood": "Stripped Teatree Wood",
+  "block.gentlemod.teatree-planks": "Teatree Planks",
+
+
+  "item.gentlemod.britain-flag": "Britain Flag",
+
+  "item.gentlemod.britain-shoes": "Shoes",
+  "item.gentlemod.britain-trousers": "Trousers",
+  "item.gentlemod.britain-tuxedo": "Tuxedo",
+
+
+  "itemGroup.gentleModTab": "Gentle Mod"
+}
