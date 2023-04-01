@@ -1,5 +1,5 @@
 "TEMPORARILY INACTIVE!" 
 
 
-# GentleMod
-A minecraft mod centered around GreatBritain and tea!
+## GentleMod
+A british themed Minecraft Forge Mod. Grow tea & more
