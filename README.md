@@ -1,4 +1,5 @@
 "TEMPORARILY INACTIVE!" 
+This is because foliage is barely documented and just trial & error.
 
 
 ## GentleMod
