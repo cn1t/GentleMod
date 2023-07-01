@@ -1,6 +1,2 @@
-"TEMPORARILY INACTIVE!" 
-This is because foliage is barely documented and just trial & error.
-
-
 ## GentleMod
-A british themed Minecraft Forge Mod. Grow tea & more
+A british themed Minecraft Forge 1.16.5 Mod. Grow tea & more
