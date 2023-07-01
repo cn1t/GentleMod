@@ -5,7 +5,11 @@ import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
 import net.minecraft.world.gen.feature.*;
+import net.minecraft.world.gen.feature.BaseTreeFeatureConfig;
+import net.minecraft.world.gen.feature.ConfiguredFeature;
+import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.foliageplacer.BlobFoliagePlacer;
+import net.minecraft.world.gen.foliageplacer.FancyFoliagePlacer;
 import net.minecraft.world.gen.trunkplacer.StraightTrunkPlacer;
 
 public class ModConfiguredFeatures {
@@ -13,13 +17,21 @@ public class ModConfiguredFeatures {
         return Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, key, configuredFeature);
     }
 
+
     public static final ConfiguredFeature<BaseTreeFeatureConfig, ?> TEATREE =
-            register("teatree", Feature.TREE.withConfiguration((
-                    new BaseTreeFeatureConfig.Builder(
+            register("teatree", Feature.TREE.withConfiguration(
+                    (new BaseTreeFeatureConfig.Builder(
                             new SimpleBlockStateProvider(ModBlocks.TEATREE_LOG.get().getDefaultState()),
                             new SimpleBlockStateProvider(ModBlocks.TEATREE_LEAVES.get().getDefaultState()),
-                            new BlobFoliagePlacer(FeatureSpread.create(2), FeatureSpread.create(0), 3),
-                            new StraightTrunkPlacer(2, 1, 0),
-                            new TwoLayerFeature(1, 0, 1))).setIgnoreVines().build()));
-
+                            new FancyFoliagePlacer(
+                                    FeatureSpread.create(2),
+                                    FeatureSpread.create(1),
+                                    3
+                            ),
+                            new StraightTrunkPlacer(2, 0, 0), // Base-Height | Added to base height (random number from 0 - X added) | Added to height after first randomization (random number from 0 - X added)
+                            new TwoLayerFeature(0, 0, 0)
+                    ))
+                            .setIgnoreVines()
+                            .build()
+            ));
 }
