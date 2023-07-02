@@ -23,11 +23,11 @@ public class ModBlocks {
     );
 
     public static final RegistryObject<Block> BRITAIN_ORE = registerBlock("britain_ore",
-            () -> new Block(AbstractBlock.Properties.create(Material.ROCK).harvestLevel(2).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f))
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK).harvestLevel(3).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(25f))
     );
 
     public static final RegistryObject<Block> BRITAIN_BLOCK = registerBlock("britain_block",
-            () -> new Block(AbstractBlock.Properties.create(Material.ROCK).harvestLevel(2).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f))
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK).harvestLevel(3).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(35f))
     );
 
     public static final RegistryObject<Block> TEA = BLOCKS.register("tea_leaf",
