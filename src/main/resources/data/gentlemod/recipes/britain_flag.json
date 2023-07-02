@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##/",
+    "##/",
+    "  /"
+  ],
+  "key": {
+    "#": {
+      "item": "gentlemod:britain_shard"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "gentlemod:britain_flag",
+    "count": 1
+  }
+}

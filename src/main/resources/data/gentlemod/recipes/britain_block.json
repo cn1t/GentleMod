@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "gentlemod:britain_shard"
+    },
+    {
+      "item": "gentlemod:britain_shard"
+    },
+    {
+      "item": "gentlemod:britain_shard"
+    },
+    {
+      "item": "gentlemod:britain_shard"
+    },
+    {
+      "item": "gentlemod:britain_shard"
+    },
+    {
+      "item": "gentlemod:britain_shard"
+    },
+    {
+      "item": "gentlemod:britain_shard"
+    },
+    {
+      "item": "gentlemod:britain_shard"
+    },
+    {
+      "item": "gentlemod:britain_shard"
+    }
+  ],
+  "result": {
+    "item": "gentlemod:britain_block",
+    "count": 1
+  }
+}

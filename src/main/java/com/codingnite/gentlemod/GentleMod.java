@@ -41,7 +41,6 @@ public class GentleMod
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
 
-        eventBus.addListener(this::setup);
         // Register the enqueueIMC method for modloading
         eventBus.addListener(this::enqueueIMC);
         // Register the processIMC method for modloading
@@ -53,19 +52,9 @@ public class GentleMod
         MinecraftForge.EVENT_BUS.register(this);
     }
 
-    private void setup(final FMLCommonSetupEvent event)
-    {
-        event.enqueueWork(() -> {
-            AxeItem.BLOCK_STRIPPING_MAP = new ImmutableMap.Builder<Block, Block>().putAll(AxeItem.BLOCK_STRIPPING_MAP)
-                    .put(ModBlocks.TEATREE_LOG.get(), ModBlocks.STRIPPED_TEATREE_LOG.get())
-                    .put(ModBlocks.TEATREE_WOOD.get(), ModBlocks.STRIPPED_TEATREE_WOOD.get()).build();
-        });
-    }
-
     private void doClientStuff(final FMLClientSetupEvent event) {
         event.enqueueWork(() -> {
-            RenderTypeLookup.setRenderLayer(ModBlocks.TEATREE_LEAVES.get(), RenderType.getCutout());
-            RenderTypeLookup.setRenderLayer(ModBlocks.TEATREE_SAPLING.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.TEA.get(), RenderType.getCutout());
         });
     }
 

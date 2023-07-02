@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "gentlemod:block/teatree-log",
-    "side": "gentlemod:block/teatree-log"
-  }
-}

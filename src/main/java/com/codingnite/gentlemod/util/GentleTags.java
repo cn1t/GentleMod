@@ -20,7 +20,7 @@ public class GentleTags {
     }
 
     public static class Items {
-        public static final Tags.IOptionalNamedTag<Item> BRITAIN = createForgeTag("gems/britain-shard");
+        public static final Tags.IOptionalNamedTag<Item> BRITAIN = createForgeTag("gems/britain_shard");
 
         private static Tags.IOptionalNamedTag<Item> createTag(String name) {
             return ItemTags.createOptional(new ResourceLocation(GentleMod.MOD_ID, name));

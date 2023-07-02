@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "gentlemod:britain_shard"
+    }
+  },
+  "result": {
+    "item": "gentlemod:britain_tuxedo",
+    "count": 1
+  }
+}
