@@ -30,7 +30,7 @@ public class ModItems {
     );
 
     public static final RegistryObject<Item> BRITAIN_FLAG = ITEMS.register("britain_flag",
-            () -> new SwordItem(ModItemTier.BRITAIN, 2, 3f, new Item.Properties().group(ModItemGroup.GENTLE_GROUP))
+            () -> new SwordItem(ModItemTier.BRITAIN, 28, 62f, new Item.Properties().group(ModItemGroup.GENTLE_GROUP)) //54 -> Bus | 66 -> 1066 invasion battle thing
     );
 
     public static final RegistryObject<Item> BRITAIN_SHARD = ITEMS.register("britain_shard",

@@ -13,7 +13,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterial implements IArmorMaterial {
-    BRITAIN("britain", 7, new int[] {3, 6, 7, 2}, 12, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 1.0f, 0.0f, () -> {
+    BRITAIN("britain", 7, new int[] {24, 38, 47, 22}, 12, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 18.0f, 0.0f, () -> {
         return Ingredient.fromItems(ModItems.BRITAIN_SHARD.get());
     });
 
