@@ -41,6 +41,10 @@ public class ModItems {
             () -> new BlockItem(ModBlocks.TEA.get(), new Item.Properties().group(ModItemGroup.GENTLE_GROUP))
     );
 
+    public static final RegistryObject<Item> EMPTY_TEA_BAG = ITEMS.register("empty_tea_bag",
+            () -> new Item(new Item.Properties().group(ModItemGroup.GENTLE_GROUP))
+    );
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
